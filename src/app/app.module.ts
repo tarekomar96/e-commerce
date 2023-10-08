@@ -3,14 +3,57 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { CategoriesComponent } from './categories/categories.component';
+import { ProductsComponent } from './products/products.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { BrandsComponent } from './brands/brands.component';
+import { NotfoundComponent } from './notfound/notfound.component';
+import { FooterComponent } from './footer/footer.component';
+import { ProfileComponent } from './profile/profile.component';
+import { MycartComponent } from './mycart/mycart.component';
+import { WishlistComponent } from './wishlist/wishlist.component';
+import { SignupComponent } from './signup/signup.component';
+import { SigninComponent } from './signin/signin.component';
+import {HttpClientModule} from '@angular/common/http'
+import { ReactiveFormsModule } from '@angular/forms';
+import { ProductdetailsComponent } from './productdetails/productdetails.component';
+import {BrowserAnimationsModule} from  '@angular/platform-browser/animations'
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { MainsliderComponent } from './mainslider/mainslider.component';
+import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
+import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
+import { CheckoutComponent } from './checkout/checkout.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    CategoriesComponent,
+    ProductsComponent,
+    NavbarComponent,
+    BrandsComponent,
+    NotfoundComponent,
+    FooterComponent,
+    ProfileComponent,
+    MycartComponent,
+    WishlistComponent,
+    SignupComponent,
+    SigninComponent,
+    ProductdetailsComponent,
+    MainsliderComponent,
+    ForgotpasswordComponent,
+    ResetpasswordComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

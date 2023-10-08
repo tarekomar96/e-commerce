@@ -1,0 +1,13 @@
+<div class="brands my-5">
+    <h2>shop popular <span class="text-main">brands</span></h2>
+    <div class="row g-3">
+        <div *ngFor="let data of brands,let last = last" class="col-md-3">
+            <div class="bg-light border p-2 text-center">
+                <img [src]="data.image" class="w-100 imgStyle">
+                <h6>{{data.name}}</h6>
+            </div>
+           
+
+        </div>
+    </div>
+</div>

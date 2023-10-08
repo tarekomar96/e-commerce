@@ -1,0 +1,16 @@
+
+<form [formGroup]="payment" (ngSubmit)="onlinePayment(payment)" class="w-75 m-auto my-5">
+
+    <label >details</label>
+    <input type="text" class="form-control" formControlName="details">
+
+    <label >phone</label>
+    <input type="tel" class="form-control" formControlName="phone">
+
+    <label >city</label>
+    <input type="text" class="form-control" formControlName="city">
+
+    <button type="submit" class="btn btn-success text-light my-3">pay</button>
+
+
+</form>
